@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>곰돌이 은행과 위험 도깨비 — 아주 쉬운 그림책</title>
-<meta name="description" content="은행이 위험한 대출의 '위험 도깨비'만 투자자에게 맡기면 묶였던 비상금이 풀려 더 많이 대출할 수 있다는 이야기. SRT(중요위험이전)를 아이도 이해하는 그림책 동화로 풀었습니다." />
+<title>곰돌이 은행과 위험 도깨비 — 갑옷 이야기 두 번째 모험 (진짜 숫자 편)</title>
+<meta name="description" content="「갑옷을 벗은 곰돌이 은행」의 속편. 부엉이 박사가 왕국 은행 12곳을 직접 재어, SRT(중요위험이전) 마법의 진짜 효과를 숫자로 보여주는 그림책 동화 — 288조원, 안전점수 +3.2점, 자산별 이질성, FISIS 검산까지." />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="곰돌이 은행과 위험 도깨비 — 아주 쉬운 그림책" />
-<meta property="og:description" content="위험 도깨비만 기사님에게 맡기면 비상금이 풀려요! SRT(중요위험이전)를 그림책 동화로 쉽게." />
+<meta property="og:title" content="곰돌이 은행과 위험 도깨비 — 두 번째 모험 (진짜 숫자 편)" />
+<meta property="og:description" content="부엉이 박사가 은행 12곳을 재어보니 갑옷 288조원어치가 풀리고 안전점수가 +3.2점! SRT 마법의 진짜 숫자 이야기." />
 <meta property="og:image" content="https://sdkparkforbi.github.io/srt-fairytale/assets/thumbnail.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -18,47 +18,34 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Jua&display=swap" rel="stylesheet" />
 <style>
-  :root{
-    --cream:#FFF7EA; --paper:#FFFDF8; --ink:#43392f; --coral:#E8775A; --teal:#2E8B8B;
-    --gold:#F2B441; --bear:#A9866B; --goblin:#9B6A9E; --sky:#8FC3E8; --leaf:#7FB069;
-    --line:#F0DFC0; --shadow:0 12px 34px rgba(120,90,40,.16);
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0; font-family:'Gaegu',cursive; color:var(--ink);
-    background:
-      radial-gradient(1100px 500px at 85% -5%, #FFE6C2 0%, transparent 60%),
-      radial-gradient(900px 500px at -5% 30%, #FCDED4 0%, transparent 55%),
-      var(--cream);
-    line-height:1.7;}
-  #bar{position:fixed;top:0;left:0;height:6px;width:0;
-    background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal));z-index:50;transition:width .12s}
+  :root{--cream:#FFF7EA;--paper:#FFFDF8;--ink:#43392f;--coral:#E8775A;--teal:#2E8B8B;
+    --gold:#F2B441;--bear:#A9866B;--goblin:#9B6A9E;--sky:#8FC3E8;--leaf:#7FB069;
+    --line:#F0DFC0;--shadow:0 12px 34px rgba(120,90,40,.16)}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Gaegu',cursive;color:var(--ink);line-height:1.7;
+    background:radial-gradient(1100px 500px at 85% -5%,#FFE6C2 0%,transparent 60%),radial-gradient(900px 500px at -5% 30%,#FCDED4 0%,transparent 55%),var(--cream)}
+  #bar{position:fixed;top:0;left:0;height:6px;width:0;background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal));z-index:50;transition:width .12s}
   .wrap{max-width:760px;margin:0 auto;padding:0 18px 80px}
-  /* cover */
   .cover{min-height:94vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
-  .cover .ribbon{font-family:'Jua',sans-serif;background:#fff;border:3px dashed var(--coral);color:var(--coral);
-    padding:8px 20px;border-radius:30px;font-size:1.05rem;box-shadow:var(--shadow)}
-  .cover h1{font-weight:700;font-size:clamp(2.6rem,9vw,4.6rem);margin:.25em 0 .05em;line-height:1.05}
+  .cover .ribbon{font-family:'Jua',sans-serif;background:#fff;border:3px dashed var(--coral);color:var(--coral);padding:8px 20px;border-radius:30px;font-size:1rem;box-shadow:var(--shadow)}
+  .cover h1{font-weight:700;font-size:clamp(2.4rem,8.5vw,4.4rem);margin:.25em 0 .05em;line-height:1.05}
   .cover h1 em{color:var(--coral);font-style:normal}
-  .cover .sub{font-family:'Jua',sans-serif;color:var(--teal);font-size:clamp(1.1rem,3.5vw,1.6rem)}
+  .cover .sub{font-family:'Jua',sans-serif;color:var(--teal);font-size:clamp(1rem,3.3vw,1.5rem)}
   .cover svg{width:min(78vw,420px);height:auto;margin:8px 0}
   .cover .go{margin-top:18px;font-size:1.5rem;color:var(--coral);animation:bob 1.5s infinite}
   @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
-  /* pages */
-  .page{background:var(--paper);border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow);
-    margin:30px 0;padding:26px clamp(18px,4vw,40px);text-align:center;position:relative;overflow:hidden}
-  .page svg{width:min(86%,440px);height:auto;margin:4px auto 10px}
-  .page p{font-size:clamp(1.5rem,4.6vw,2rem);margin:.2em 0;word-break:keep-all}
-  .page .hint{font-family:'Jua',sans-serif;font-size:.95rem;color:#a98c63;background:#FFF3D6;
-    display:inline-block;padding:5px 14px;border-radius:20px;margin-top:12px;line-height:1.5}
+  .page{background:var(--paper);border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow);margin:30px 0;padding:26px clamp(18px,4vw,40px);text-align:center;position:relative;overflow:hidden}
+  .page svg{width:min(90%,460px);height:auto;margin:4px auto 10px}
+  .page p{font-size:clamp(1.45rem,4.4vw,1.95rem);margin:.2em 0;word-break:keep-all}
+  .page .hint{font-family:'Jua',sans-serif;font-size:.92rem;color:#a98c63;background:#FFF3D6;display:inline-block;padding:5px 14px;border-radius:20px;margin-top:12px;line-height:1.5}
   .pgno{position:absolute;right:20px;bottom:12px;font-size:1.6rem;color:#eadcbf}
-  .big{color:var(--coral)}
-  .tealw{color:var(--teal)}
-  /* ending */
+  .big{color:var(--coral)}.tealw{color:var(--teal)}
+  .huge{font-weight:700;font-size:clamp(3rem,12vw,5.5rem);color:var(--coral);line-height:1;display:block;margin:.1em 0}
+  .recaplink,.nextlink{display:inline-block;font-family:'Jua',sans-serif;text-decoration:none;border-radius:30px;padding:9px 20px;margin-top:10px;font-size:1rem}
+  .recaplink{background:#fff;border:2px solid var(--coral);color:var(--coral)}
+  .nextlink{background:var(--teal);color:#fff}
   .end{text-align:center;font-family:'Jua',sans-serif;color:#8a7252;font-size:.95rem;margin-top:36px;line-height:1.9}
   .end .pill{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:20px;padding:6px 14px;margin:4px}
-  a.btn{display:inline-block;font-family:'Jua',sans-serif;background:var(--teal);color:#fff;text-decoration:none;
-    padding:10px 22px;border-radius:30px;margin-top:10px}
 </style>
 </head>
 <body>
@@ -66,214 +53,245 @@
 <div class="wrap">
 
   <header class="cover">
-    <span class="ribbon">🐻 아주 쉬운 그림책 🧚</span>
-    <svg viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="곰돌이와 위험 도깨비">
-      <ellipse cx="180" cy="215" rx="120" ry="20" fill="#EADCC2"/>
-      <!-- bear -->
-      <g transform="translate(130,120)">
-        <ellipse cx="0" cy="55" rx="62" ry="50" fill="#A9866B"/>
-        <circle cx="0" cy="-5" r="52" fill="#A9866B"/>
-        <circle cx="-38" cy="-40" r="18" fill="#A9866B"/><circle cx="38" cy="-40" r="18" fill="#A9866B"/>
-        <circle cx="-38" cy="-40" r="9" fill="#caa985"/><circle cx="38" cy="-40" r="9" fill="#caa985"/>
-        <circle cx="-18" cy="-8" r="7" fill="#33384D"/><circle cx="18" cy="-8" r="7" fill="#33384D"/>
-        <circle cx="-15" cy="-11" r="2.5" fill="#fff"/><circle cx="21" cy="-11" r="2.5" fill="#fff"/>
-        <ellipse cx="0" cy="12" rx="11" ry="8" fill="#6b4f3a"/>
-        <path d="M-12 24 q12 12 24 0" stroke="#5b4030" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <span class="ribbon">🐻 두 번째 모험 · 진짜 숫자 편 🔢</span>
+    <svg viewBox="0 0 360 230" role="img" aria-label="갑옷 입은 곰돌이와 부엉이 박사">
+      <ellipse cx="180" cy="208" rx="120" ry="18" fill="#EADCC2"/>
+      <g transform="translate(135,118)">
+        <rect x="-52" y="44" width="104" height="92" rx="26" fill="#A9866B"/>
+        <rect x="-52" y="44" width="104" height="92" rx="26" fill="none" stroke="#8fa0bd" stroke-width="7"/>
+        <line x1="-52" y1="82" x2="52" y2="82" stroke="#8fa0bd" stroke-width="5"/>
+        <circle cx="0" cy="-2" r="46" fill="#A9866B"/>
+        <circle cx="-32" cy="-34" r="13" fill="#A9866B"/><circle cx="32" cy="-34" r="13" fill="#A9866B"/>
+        <circle cx="-15" cy="-4" r="6" fill="#33384D"/><circle cx="15" cy="-4" r="6" fill="#33384D"/>
+        <ellipse cx="0" cy="12" rx="9" ry="6" fill="#6b4f3a"/>
+        <path d="M-11 22 q11 11 22 0" stroke="#5b4030" stroke-width="4" fill="none" stroke-linecap="round"/>
       </g>
-      <!-- goblin peeking -->
-      <g transform="translate(270,90)">
-        <ellipse cx="0" cy="0" rx="34" ry="30" fill="#9B6A9E"/>
-        <path d="M-30 -12 l-18 -16 l9 22Z" fill="#7d5380"/><path d="M30 -12 l18 -16 l-9 22Z" fill="#7d5380"/>
-        <circle cx="-12" cy="-3" r="7" fill="#fff"/><circle cx="12" cy="-3" r="7" fill="#fff"/>
-        <circle cx="-12" cy="-2" r="3.5" fill="#33384D"/><circle cx="12" cy="-2" r="3.5" fill="#33384D"/>
-        <path d="M-11 13 q11 9 22 0" stroke="#3c2540" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <g transform="translate(280,96)">
+        <ellipse cx="0" cy="6" rx="40" ry="44" fill="#8a6d4f"/><ellipse cx="0" cy="12" rx="28" ry="32" fill="#c4a47e"/>
+        <circle cx="-15" cy="-3" r="15" fill="#fff"/><circle cx="15" cy="-3" r="15" fill="#fff"/>
+        <circle cx="-15" cy="-3" r="7" fill="#33384D"/><circle cx="15" cy="-3" r="7" fill="#33384D"/>
+        <path d="M-7 10 l7 10 l7 -10Z" fill="#F2B441"/>
+        <circle cx="-15" cy="-3" r="17" fill="none" stroke="#33384D" stroke-width="2"/><circle cx="15" cy="-3" r="17" fill="none" stroke="#33384D" stroke-width="2"/>
       </g>
     </svg>
     <h1>곰돌이 은행과<br><em>위험 도깨비</em></h1>
-    <div class="sub">~ SRT(중요위험이전) 마법 이야기 ~</div>
+    <div class="sub">~ 「갑옷을 벗은 곰돌이 은행」 두 번째 이야기 ~</div>
     <div class="go">↓ 넘겨 보세요 ↓</div>
   </header>
 
-  <!-- 1 -->
+  <!-- recap -->
   <section class="page">
-    <svg viewBox="0 0 400 230" role="img" aria-label="곰돌이 은행이 마을에 돈을 빌려줘요">
-      <rect x="40" y="150" width="90" height="60" rx="6" fill="#F6D9B0"/><path d="M30 150 l55 -38 l55 38Z" fill="#E8775A"/>
-      <rect x="60" y="170" width="22" height="40" fill="#A9866B"/><rect x="95" y="168" width="26" height="26" rx="4" fill="#cdebe7"/>
-      <g fill="#F2B441" stroke="#d99a25" stroke-width="2"><circle cx="200" cy="150" r="13"/><circle cx="235" cy="165" r="13"/><circle cx="270" cy="150" r="13"/></g>
-      <g transform="translate(330,160)"><circle r="34" fill="#A9866B"/><circle cx="-24" cy="-24" r="10" fill="#A9866B"/><circle cx="24" cy="-24" r="10" fill="#A9866B"/><circle cx="-10" cy="-4" r="4.5" fill="#33384D"/><circle cx="10" cy="-4" r="4.5" fill="#33384D"/><path d="M-10 8 q10 9 20 0" stroke="#5b4030" stroke-width="3.5" fill="none" stroke-linecap="round"/></g>
-      <text x="92" y="135" font-size="15" text-anchor="middle" fill="#7a5b16" font-family="Jua">마을 가게</text>
+    <svg viewBox="0 0 400 200" role="img" aria-label="지난 이야기 회상">
+      <g transform="translate(140,110)">
+        <rect x="-50" y="30" width="100" height="80" rx="22" fill="#A9866B"/>
+        <rect x="-50" y="30" width="100" height="80" rx="22" fill="none" stroke="#8fa0bd" stroke-width="6"/>
+        <circle cx="0" cy="0" r="42" fill="#A9866B"/><circle cx="-30" cy="-30" r="12" fill="#A9866B"/><circle cx="30" cy="-30" r="12" fill="#A9866B"/>
+        <circle cx="-14" cy="-3" r="5.5" fill="#33384D"/><circle cx="14" cy="-3" r="5.5" fill="#33384D"/>
+        <path d="M-22 12 q-6 8 0 14" stroke="#8FC3E8" stroke-width="3" fill="none"/>
+        <path d="M-10 14 q10 8 20 0" stroke="#5b4030" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+      </g>
+      <text x="280" y="90" font-size="40" fill="#9B6A9E" font-family="Gaegu" font-weight="700">👹</text>
+      <text x="280" y="125" font-size="15" text-anchor="middle" fill="#6c4570" font-family="Jua">위험 도깨비</text>
     </svg>
-    <p>옛날 옛적, 마을에 <span class="big">곰돌이 은행</span>이 있었어요.<br>곰돌이는 사람들에게 돈을 빌려주었지요.</p>
+    <p>지난 이야기에서, 곰돌이 은행은<br><span class="big">무거운 갑옷</span> 때문에 힘들었어요.<br>SRT 마법으로 <span class="tealw">위험 도깨비</span>를 기사님에게 넘겨<br>갑옷을 가볍게 했지요.</p>
+    <a class="recaplink" href="https://sdkparkforbi.github.io/srt-storybook/">← 지난 이야기 다시 보기</a>
+    <div class="hint">갑옷 = 위험가중자산 · 도깨비 = 대출의 위험 · 기사 = 투자자</div>
     <div class="pgno">1</div>
   </section>
 
-  <!-- 2 -->
+  <!-- 2 owl curious -->
   <section class="page">
-    <svg viewBox="0 0 400 240" role="img" aria-label="곰돌이가 비상금을 따로 묶어둬요">
-      <g transform="translate(120,120)"><circle r="46" fill="#A9866B"/><circle cx="-32" cy="-32" r="13" fill="#A9866B"/><circle cx="32" cy="-32" r="13" fill="#A9866B"/><circle cx="-14" cy="-6" r="6" fill="#33384D"/><circle cx="14" cy="-6" r="6" fill="#33384D"/><path d="M-12 10 q12 10 24 0" stroke="#5b4030" stroke-width="4" fill="none" stroke-linecap="round"/></g>
-      <rect x="230" y="120" width="110" height="95" rx="12" fill="#7d8aa3"/>
-      <circle cx="285" cy="150" r="16" fill="#5b6275"/><rect x="278" y="150" width="14" height="22" fill="#5b6275"/>
-      <g fill="#F2B441"><circle cx="265" cy="190" r="9"/><circle cx="290" cy="195" r="9"/><circle cx="312" cy="188" r="9"/></g>
-      <text x="285" y="232" font-size="16" text-anchor="middle" fill="#5b6275" font-family="Jua">비상금 금고</text>
+    <svg viewBox="0 0 400 200" role="img" aria-label="부엉이 박사가 궁금해해요">
+      <g transform="translate(200,110)">
+        <ellipse cx="0" cy="8" rx="52" ry="56" fill="#8a6d4f"/><ellipse cx="0" cy="16" rx="36" ry="42" fill="#c4a47e"/>
+        <circle cx="-19" cy="-4" r="20" fill="#fff"/><circle cx="19" cy="-4" r="20" fill="#fff"/>
+        <circle cx="-19" cy="-4" r="9" fill="#33384D"/><circle cx="19" cy="-4" r="9" fill="#33384D"/>
+        <path d="M-9 12 l9 13 l9 -13Z" fill="#F2B441"/>
+        <path d="M-44 -38 l16 18 M44 -38 l-16 18" stroke="#8a6d4f" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="-19" cy="-4" r="22" fill="none" stroke="#33384D" stroke-width="2"/><circle cx="19" cy="-4" r="22" fill="none" stroke="#33384D" stroke-width="2"/>
+      </g>
+      <text x="320" y="55" font-size="44" fill="#E8775A" font-family="Gaegu" font-weight="700">?</text>
     </svg>
-    <p>그런데 규칙이 있었어요.<br>돈을 빌려줄 때마다, 혹시 못 돌려받을까 봐<br><span class="tealw">'비상금'</span>을 꼭 따로 묶어둬야 했답니다.</p>
-    <div class="hint">비상금 = 은행이 손실에 대비해 쌓는 '자본'</div>
+    <p>그런데 <span class="tealw">부엉이 박사님</span>이 궁금했어요.<br>"이 마법, <span class="big">정말 효과가 있을까?</span><br>왕국 전체를 재 보자!"</p>
     <div class="pgno">2</div>
   </section>
 
-  <!-- 3 -->
+  <!-- 3 twelve banks -->
   <section class="page">
-    <svg viewBox="0 0 400 240" role="img" aria-label="무거운 비상금에 곰돌이가 힘들어해요">
-      <g transform="translate(150,110)">
-        <rect x="-55" y="40" width="110" height="120" rx="26" fill="#A9866B"/>
-        <rect x="-70" y="55" width="50" height="95" rx="16" fill="#8f7058"/>
-        <circle cx="0" cy="0" r="46" fill="#A9866B"/>
-        <circle cx="-32" cy="-32" r="13" fill="#A9866B"/><circle cx="32" cy="-32" r="13" fill="#A9866B"/>
-        <circle cx="-15" cy="-2" r="6" fill="#33384D"/><circle cx="15" cy="-2" r="6" fill="#33384D"/>
-        <path d="M-12 16 q12 -8 24 0" stroke="#5b4030" stroke-width="4" fill="none" stroke-linecap="round"/>
-        <path d="M40 -20 q8 12 0 22 q-8 -8 0 -22Z" fill="#8FC3E8"/>
+    <svg viewBox="0 0 400 180" role="img" aria-label="은행 12곳의 장부">
+      <g>
+        <g transform="translate(70,90)"><rect x="-26" y="-30" width="52" height="60" rx="5" fill="#5b6275"/><rect x="-21" y="-25" width="42" height="50" rx="3" fill="#FFFDF8"/></g>
+        <g transform="translate(135,90)"><rect x="-26" y="-30" width="52" height="60" rx="5" fill="#7d8aa3"/><rect x="-21" y="-25" width="42" height="50" rx="3" fill="#FFFDF8"/></g>
+        <g transform="translate(200,90)"><rect x="-26" y="-30" width="52" height="60" rx="5" fill="#E8775A"/><rect x="-21" y="-25" width="42" height="50" rx="3" fill="#FFFDF8"/></g>
+        <g transform="translate(265,90)"><rect x="-26" y="-30" width="52" height="60" rx="5" fill="#2E8B8B"/><rect x="-21" y="-25" width="42" height="50" rx="3" fill="#FFFDF8"/></g>
+        <g transform="translate(330,90)"><rect x="-26" y="-30" width="52" height="60" rx="5" fill="#F2B441"/><rect x="-21" y="-25" width="42" height="50" rx="3" fill="#FFFDF8"/></g>
       </g>
-      <rect x="60" y="60" width="60" height="55" rx="8" fill="#5b6275"/><text x="90" y="94" font-size="15" text-anchor="middle" fill="#fff" font-family="Jua">비상금</text>
+      <text x="200" y="160" font-size="16" text-anchor="middle" fill="#7a5b16" font-family="Jua">은행 12곳의 장부</text>
     </svg>
-    <p>위험한 대출일수록<br><span class="big">비상금을 더 많이</span> 묶어야 했어요.<br>그래서 곰돌이는 새로 빌려줄 돈이 모자랐지요.</p>
+    <p>박사님은 마을 은행 <span class="big">열두 곳</span>의<br>장부를 모두 펼쳤어요.</p>
+    <div class="hint">국민·신한·하나·우리·기업·농협·산업·부산·경남·수협·광주·제주</div>
     <div class="pgno">3</div>
   </section>
 
-  <!-- 4 -->
+  <!-- 4 corporate 30% -->
   <section class="page">
-    <svg viewBox="0 0 400 230" role="img" aria-label="바다 건너에서 마법 편지가 와요">
-      <path d="M0 175 q50 -18 100 0 t100 0 t100 0 t100 0 v55 H0Z" fill="#8FC3E8" opacity=".6"/>
-      <circle cx="320" cy="55" r="30" fill="#F2B441" opacity=".6"/>
-      <g transform="translate(180,95) rotate(-8)">
-        <rect x="-55" y="-35" width="110" height="74" rx="8" fill="#FFFDF8" stroke="#E8775A" stroke-width="3"/>
-        <path d="M-55 -35 l55 42 l55 -42" fill="none" stroke="#E8775A" stroke-width="3"/>
-        <text x="0" y="22" font-size="20" text-anchor="middle" fill="#E8775A" font-family="Jua">SRT</text>
+    <svg viewBox="0 0 400 190" role="img" aria-label="기업 대출 갑옷이 30% 가벼워져요">
+      <g transform="translate(120,100)">
+        <rect x="-44" y="20" width="88" height="74" rx="20" fill="#A9866B"/>
+        <rect x="-44" y="20" width="88" height="36" rx="16" fill="none" stroke="#9bbf9b" stroke-width="6" stroke-dasharray="5 5"/>
+        <circle cx="0" cy="-8" r="40" fill="#A9866B"/><circle cx="-28" cy="-34" r="11" fill="#A9866B"/><circle cx="28" cy="-34" r="11" fill="#A9866B"/>
+        <circle cx="-13" cy="-10" r="5" fill="#33384D"/><circle cx="13" cy="-10" r="5" fill="#33384D"/>
+        <path d="M-10 4 q10 9 20 0" stroke="#5b4030" stroke-width="3.5" fill="none" stroke-linecap="round"/>
       </g>
-      <g fill="#F2B441"><circle cx="120" cy="60" r="4"/><circle cx="250" cy="70" r="5"/><circle cx="220" cy="40" r="3"/></g>
+      <text x="270" y="80" font-size="56" text-anchor="middle" fill="#15803d" font-family="Gaegu" font-weight="700">30%</text>
+      <text x="270" y="120" font-size="17" text-anchor="middle" fill="#4e7a3c" font-family="Jua">더 가벼워짐!</text>
     </svg>
-    <p>어느 날, 바다 건너에서<br>신기한 <span class="big">마법</span>이 찾아왔어요.<br>이름은 <span class="big">SRT 마법</span>!</p>
-    <div class="hint">SRT = 중요위험이전 (위험만 따로 넘기는 방법)</div>
+    <p>위험한 <span class="big">기업 가게 대출</span>은 —<br>갑옷이 무려 <span class="big">30%나</span> 가벼워졌어요!</p>
     <div class="pgno">4</div>
   </section>
 
-  <!-- 5 -->
+  <!-- 5 mortgage no effect + chart -->
   <section class="page">
-    <svg viewBox="0 0 400 240" role="img" aria-label="위험 도깨비를 기사님에게 맡겨요">
-      <!-- basket -->
-      <rect x="30" y="120" width="90" height="70" rx="8" fill="#C9912E"/><rect x="30" y="110" width="90" height="20" rx="6" fill="#E0A93B"/>
-      <!-- goblin flying out -->
-      <g transform="translate(180,90)">
-        <ellipse cx="0" cy="0" rx="30" ry="26" fill="#9B6A9E"/>
-        <path d="M-26 -10 l-16 -14 l8 18Z" fill="#7d5380"/><path d="M26 -10 l16 -14 l-8 18Z" fill="#7d5380"/>
-        <circle cx="-10" cy="-3" r="6" fill="#fff"/><circle cx="10" cy="-3" r="6" fill="#fff"/>
-        <circle cx="-10" cy="-2" r="3" fill="#33384D"/><circle cx="10" cy="-2" r="3" fill="#33384D"/>
-      </g>
-      <text x="180" y="138" font-size="13" text-anchor="middle" fill="#6c4570" font-family="Jua">위험 도깨비</text>
-      <path d="M215 85 q45 0 60 55" stroke="#E8775A" stroke-width="4" fill="none" stroke-dasharray="6 6" marker-end="url(#a)"/>
-      <defs><marker id="a" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0 0 L8 5 L0 10Z" fill="#E8775A"/></marker></defs>
-      <!-- knight -->
-      <g transform="translate(330,160)"><rect x="-24" y="-12" width="48" height="62" rx="14" fill="#2E8B8B"/><circle cx="0" cy="-28" r="19" fill="#cdebe7"/><rect x="-13" y="-36" width="26" height="14" rx="4" fill="#6fb3b0"/><rect x="-2" y="-52" width="4" height="14" fill="#E8775A"/></g>
-      <text x="330" y="225" font-size="14" text-anchor="middle" fill="#246b6b" font-family="Jua">용감한 기사님</text>
+    <p>하지만 '<span class="tealw">집을 맡긴 안전한 대출</span>'은<br>마법을 써도 소용없었어요.<br>(오히려 살짝 무거워졌대요!)</p>
+    <svg viewBox="0 0 400 230" role="img" aria-label="자산별 갑옷이 가벼워진 정도 막대그래프">
+      <line x1="60" y1="20" x2="60" y2="190" stroke="#e3d6ba"/>
+      <line x1="60" y1="135" x2="380" y2="135" stroke="#9b8463" stroke-width="2"/>
+      <text x="52" y="55" font-size="12" text-anchor="end" fill="#a98c63" font-family="Jua">+30%</text>
+      <text x="52" y="139" font-size="12" text-anchor="end" fill="#a98c63" font-family="Jua">0</text>
+      <rect x="80" y="45" width="55" height="90" rx="6" fill="#E8775A"/><text x="107" y="38" font-size="14" text-anchor="middle" fill="#cf5a3e" font-family="Jua">+30%</text><text x="107" y="158" font-size="13" text-anchor="middle" fill="#43392f" font-family="Jua">기업</text>
+      <rect x="160" y="135" width="55" height="28" rx="6" fill="#8FC3E8"/><text x="187" y="180" font-size="14" text-anchor="middle" fill="#3f7fa8" font-family="Jua">-9%</text><text x="187" y="200" font-size="13" text-anchor="middle" fill="#43392f" font-family="Jua">집담보</text>
+      <rect x="240" y="45" width="55" height="90" rx="6" fill="#E8775A"/><text x="267" y="38" font-size="14" text-anchor="middle" fill="#cf5a3e" font-family="Jua">+30%</text><text x="267" y="158" font-size="13" text-anchor="middle" fill="#43392f" font-family="Jua">기타소매</text>
+      <rect x="320" y="92" width="55" height="43" rx="6" fill="#2E8B8B"/><text x="347" y="85" font-size="14" text-anchor="middle" fill="#246b6b" font-family="Jua">+14%</text><text x="347" y="158" font-size="13" text-anchor="middle" fill="#43392f" font-family="Jua">특수금융</text>
     </svg>
-    <p>대출 속 <span class="big">가장 위험한 부분</span> —<br>바로 '위험 도깨비'를 기사님에게 맡기는 마법이에요.<br>곰돌이는 고맙다고 작은 <span class="tealw">선물</span>을 주었지요.</p>
-    <div class="hint">기사님 = 투자자 · 선물 = 수수료 (보험과 비슷해요)</div>
+    <div class="hint">안전한 대출엔 위험 도깨비가 거의 없어서, 마법이 필요 없어요</div>
     <div class="pgno">5</div>
   </section>
 
-  <!-- 6 -->
+  <!-- 6 so only risky -->
   <section class="page">
-    <svg viewBox="0 0 400 230" role="img" aria-label="묶였던 비상금이 풀려요">
-      <rect x="150" y="90" width="110" height="95" rx="12" fill="#7d8aa3" opacity=".5"/>
-      <g fill="#F2B441" stroke="#d99a25" stroke-width="2">
-        <circle cx="120" cy="70" r="13"/><circle cx="90" cy="110" r="13"/><circle cx="290" cy="75" r="13"/><circle cx="310" cy="120" r="13"/><circle cx="205" cy="45" r="13"/>
-      </g>
-      <text x="205" y="160" font-size="22" text-anchor="middle" fill="#cf5a3e" font-family="Gaegu" font-weight="700">스르르~</text>
-      <g transform="translate(205,205)"><circle r="22" fill="#A9866B"/><circle cx="-16" cy="-16" r="7" fill="#A9866B"/><circle cx="16" cy="-16" r="7" fill="#A9866B"/><circle cx="-7" cy="-3" r="3.5" fill="#33384D"/><circle cx="7" cy="-3" r="3.5" fill="#33384D"/><path d="M-8 7 q8 9 16 0" stroke="#5b4030" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+    <svg viewBox="0 0 400 160" role="img" aria-label="위험한 대출에만 마법">
+      <g transform="translate(120,80)"><circle r="30" fill="#A9866B"/><circle cx="-21" cy="-21" r="9" fill="#A9866B"/><circle cx="21" cy="-21" r="9" fill="#A9866B"/><circle cx="-9" cy="-4" r="4.5" fill="#33384D"/><circle cx="9" cy="-4" r="4.5" fill="#33384D"/><path d="M-9 7 q9 9 18 0" stroke="#5b4030" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+      <text x="210" y="88" font-size="30" fill="#E8775A">→</text>
+      <text x="300" y="75" font-size="40">🏢</text><text x="300" y="120" font-size="14" text-anchor="middle" fill="#7a5b16" font-family="Jua">위험한 기업대출</text>
     </svg>
-    <p>도깨비가 떠나자,<br>꽁꽁 묶여 있던 <span class="big">비상금이 스르르 풀렸어요!</span></p>
+    <p>그래서 곰돌이들은<br><span class="big">위험한 대출에만</span> 마법을 쓰기로 했어요.</p>
     <div class="pgno">6</div>
   </section>
 
-  <!-- 7 -->
+  <!-- 7 total 288 -->
   <section class="page">
-    <svg viewBox="0 0 400 220" role="img" aria-label="곰돌이가 더 많은 가게에 돈을 빌려줘요">
-      <g fill="#E8775A"><path d="M30 150 l38 -42 l38 42Z"/><path d="M150 150 l40 -46 l40 46Z"/><path d="M275 150 l38 -42 l38 42Z"/></g>
-      <g fill="#F6D9B0"><rect x="38" y="150" width="56" height="50"/><rect x="162" y="150" width="56" height="46"/><rect x="283" y="150" width="56" height="50"/></g>
-      <g fill="#F2B441" stroke="#d99a25" stroke-width="2"><circle cx="120" cy="120" r="11"/><circle cx="245" cy="118" r="11"/></g>
-      <text x="200" y="215" font-size="15" text-anchor="middle" fill="#7a5b16" font-family="Jua">북적북적 마을</text>
+    <svg viewBox="0 0 400 150" role="img" aria-label="풀려난 갑옷 더미">
+      <g fill="#F2B441" stroke="#d99a25" stroke-width="2">
+        <circle cx="120" cy="80" r="16"/><circle cx="155" cy="100" r="16"/><circle cx="190" cy="78" r="16"/><circle cx="225" cy="100" r="16"/><circle cx="260" cy="80" r="16"/><circle cx="170" cy="55" r="16"/><circle cx="210" cy="55" r="16"/>
+      </g>
     </svg>
-    <p>풀린 돈으로 곰돌이는<br><span class="big">더 많은 빵집과 가게</span>에 돈을 빌려줄 수 있었어요.<br>마을이 북적북적해졌지요.</p>
+    <p>은행 열두 곳을 다 합치니 —</p>
+    <span class="huge">288조 원</span>
+    <p>어치 갑옷이 풀렸어요!</p>
+    <div class="hint">288조 원 = 12개 은행 위험가중자산 경감액 합계</div>
     <div class="pgno">7</div>
   </section>
 
-  <!-- 8 -->
+  <!-- 8 bank ranking -->
   <section class="page">
-    <svg viewBox="0 0 400 230" role="img" aria-label="부엉이 박사가 열두 은행을 살펴봐요">
-      <g transform="translate(110,110)">
-        <ellipse cx="0" cy="8" rx="50" ry="54" fill="#8a6d4f"/><ellipse cx="0" cy="16" rx="35" ry="40" fill="#c4a47e"/>
-        <circle cx="-18" cy="-4" r="19" fill="#fff"/><circle cx="18" cy="-4" r="19" fill="#fff"/>
-        <circle cx="-18" cy="-4" r="9" fill="#33384D"/><circle cx="18" cy="-4" r="9" fill="#33384D"/>
-        <path d="M-9 12 l9 13 l9 -13Z" fill="#F2B441"/>
-        <path d="M-42 -36 l16 18 M42 -36 l-16 18" stroke="#8a6d4f" stroke-width="8" stroke-linecap="round"/>
-        <circle cx="-18" cy="-4" r="21" fill="none" stroke="#33384D" stroke-width="2"/><circle cx="18" cy="-4" r="21" fill="none" stroke="#33384D" stroke-width="2"/>
+    <p>가장 많이 푼 곰돌이는 <span class="big">기업은행</span>,<br>혼자서 <span class="big">53조 원!</span></p>
+    <svg viewBox="0 0 400 220" role="img" aria-label="은행별 풀려난 갑옷 순위">
+      <g font-family="Jua" font-size="13">
+        <text x="92" y="34" text-anchor="end" fill="#43392f">기업은행</text><rect x="100" y="22" width="265" height="16" rx="8" fill="#E8775A"/><text x="372" y="34" fill="#cf5a3e">53조</text>
+        <text x="92" y="62" text-anchor="end" fill="#43392f">신한</text><rect x="100" y="50" width="244" height="16" rx="8" fill="#E8775A"/><text x="351" y="62" fill="#cf5a3e">49조</text>
+        <text x="92" y="90" text-anchor="end" fill="#43392f">산업은행</text><rect x="100" y="78" width="198" height="16" rx="8" fill="#F2B441"/><text x="305" y="90" fill="#9a7320">40조</text>
+        <text x="92" y="118" text-anchor="end" fill="#43392f">국민</text><rect x="100" y="106" width="192" height="16" rx="8" fill="#F2B441"/><text x="299" y="118" fill="#9a7320">38조</text>
+        <text x="92" y="146" text-anchor="end" fill="#43392f">하나</text><rect x="100" y="134" width="190" height="16" rx="8" fill="#F2B441"/><text x="297" y="146" fill="#9a7320">38조</text>
+        <text x="92" y="174" text-anchor="end" fill="#43392f">우리</text><rect x="100" y="162" width="150" height="16" rx="8" fill="#2E8B8B"/><text x="257" y="174" fill="#246b6b">30조</text>
+        <text x="200" y="205" text-anchor="middle" fill="#a98c63" font-size="12">…그 외 농협·부산·경남·수협·광주·제주도 모두 가벼워졌어요</text>
       </g>
-      <g transform="translate(240,90)">
-        <rect width="120" height="90" rx="6" fill="#5b6275"/><rect x="7" y="7" width="106" height="76" rx="4" fill="#FFFDF8"/>
-        <text x="60" y="52" font-size="26" text-anchor="middle" fill="#9B6A9E" font-family="Jua">12</text>
-      </g>
-      <text x="300" y="200" font-size="14" text-anchor="middle" fill="#5b6275" font-family="Jua">은행 12곳 장부</text>
     </svg>
-    <p>지혜로운 <span class="tealw">부엉이 박사님</span>이<br>마을 은행 <span class="big">열두 곳</span>을 모두 살펴봤어요.</p>
     <div class="pgno">8</div>
   </section>
 
-  <!-- 9 -->
+  <!-- 9 CET1 +3.2 -->
   <section class="page">
-    <svg viewBox="0 0 400 210" role="img" aria-label="모두 합쳐 23조원이 풀렸어요">
-      <circle cx="200" cy="100" r="80" fill="#FFF3D6" stroke="#F2B441" stroke-width="3"/>
-      <text x="200" y="95" font-size="42" text-anchor="middle" fill="#E8775A" font-family="Gaegu" font-weight="700">23조</text>
-      <text x="200" y="128" font-size="18" text-anchor="middle" fill="#9a7320" font-family="Jua">원이 풀렸어요!</text>
-      <g fill="#F2B441"><circle cx="90" cy="50" r="6"/><circle cx="320" cy="60" r="7"/><circle cx="330" cy="150" r="5"/><circle cx="80" cy="150" r="6"/></g>
+    <svg viewBox="0 0 400 160" role="img" aria-label="튼튼해진 곰돌이">
+      <g transform="translate(150,85)"><circle r="40" fill="#A9866B"/><circle cx="-28" cy="-28" r="12" fill="#A9866B"/><circle cx="28" cy="-28" r="12" fill="#A9866B"/><circle cx="-13" cy="-5" r="5.5" fill="#33384D"/><circle cx="13" cy="-5" r="5.5" fill="#33384D"/><path d="M-11 9 q11 11 22 0" stroke="#5b4030" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M-52 6 q-10 -14 4 -22 M52 6 q10 -14 -4 -22" stroke="#7FB069" stroke-width="6" fill="none" stroke-linecap="round"/></g>
+      <text x="285" y="75" font-size="50" text-anchor="middle" fill="#15803d" font-family="Gaegu" font-weight="700">+3.2</text>
+      <text x="285" y="110" font-size="16" text-anchor="middle" fill="#4e7a3c" font-family="Jua">튼튼함 점수 UP</text>
     </svg>
-    <p>"와! 다 합치니<br>무려 <span class="big">23조 원</span>이 풀렸네.<br>게다가 은행들이 더 <span class="tealw">튼튼해졌어!</span>"</p>
-    <div class="hint">은행이 더 튼튼해진 정도 = 보통주자본(CET1)비율 평균 +3.2%포인트</div>
+    <p>은행들의 <span class="tealw">'튼튼함 점수'</span>도<br>평균 <span class="big">3.2점</span> 올랐어요.<br>모두 더 건강해졌지요!</p>
+    <div class="hint">튼튼함 점수 = 보통주자본비율(CET1) · 평균 +3.2%포인트</div>
     <div class="pgno">9</div>
   </section>
 
-  <!-- 10 -->
+  <!-- 10 FISIS check -->
   <section class="page">
-    <svg viewBox="0 0 400 210" role="img" aria-label="안전한 집담보 대출엔 도깨비가 없어요">
-      <path d="M120 110 l80 -55 l80 55Z" fill="#7FB069"/><rect x="140" y="110" width="120" height="80" fill="#F6D9B0"/>
-      <rect x="185" y="140" width="30" height="50" fill="#A9866B"/><rect x="160" y="125" width="22" height="22" fill="#cdebe7"/><rect x="218" y="125" width="22" height="22" fill="#cdebe7"/>
-      <g transform="translate(310,70)"><circle r="22" fill="#7FB069"/><path d="M-10 0 l7 8 l13 -16" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
-      <text x="200" y="205" font-size="14" text-anchor="middle" fill="#4e7a3c" font-family="Jua">안전한 집담보 대출</text>
+    <svg viewBox="0 0 400 170" role="img" aria-label="두 권의 장부로 검산">
+      <g transform="translate(140,90) rotate(-6)"><rect x="-40" y="-30" width="80" height="62" rx="5" fill="#5b6275"/><rect x="-34" y="-24" width="68" height="50" rx="3" fill="#FFFDF8"/><line x1="-24" y1="-10" x2="24" y2="-10" stroke="#bcaee0" stroke-width="3"/><line x1="-24" y1="2" x2="24" y2="2" stroke="#bcaee0" stroke-width="3"/></g>
+      <g transform="translate(260,90) rotate(6)"><rect x="-40" y="-30" width="80" height="62" rx="5" fill="#2E8B8B"/><rect x="-34" y="-24" width="68" height="50" rx="3" fill="#FFFDF8"/><line x1="-24" y1="-10" x2="24" y2="-10" stroke="#9bd3ce" stroke-width="3"/><line x1="-24" y1="2" x2="24" y2="2" stroke="#9bd3ce" stroke-width="3"/></g>
+      <text x="200" y="98" font-size="34" text-anchor="middle" fill="#15803d">✓</text>
     </svg>
-    <p>단, 아주 <span class="tealw">안전한 대출</span>(집을 맡긴 대출)에는<br>도깨비가 살지 않았어요.<br>그래서 그런 대출엔 <span class="big">마법이 필요 없었답니다.</span></p>
+    <p>박사님은 꼼꼼했어요.<br>다른 큰 장부(<span class="tealw">금융감독원 장부</span>)로<br>숫자를 한 번 더 맞춰봤지요.<br><span class="big">딱 맞았어요!</span></p>
+    <div class="hint">금융감독원 금융통계정보시스템(FISIS)으로 교차검증 — 숫자가 거의 그대로 일치</div>
     <div class="pgno">10</div>
   </section>
 
-  <!-- 11 -->
+  <!-- 11 two rulers: SA vs IRB -->
   <section class="page">
-    <svg viewBox="0 0 400 210" role="img" aria-label="행복해진 마을">
-      <circle cx="200" cy="70" r="34" fill="#F2B441" opacity=".55"/>
-      <g fill="#E8775A"><path d="M40 150 l34 -40 l34 40Z"/><path d="M150 155 l38 -46 l38 46Z"/><path d="M270 150 l34 -40 l34 40Z"/></g>
-      <g fill="#F6D9B0"><rect x="48" y="150" width="48" height="42"/><rect x="160" y="155" width="56" height="37"/><rect x="278" y="150" width="48" height="42"/></g>
-      <g transform="translate(200,168)"><circle r="24" fill="#A9866B"/><circle cx="-17" cy="-17" r="8" fill="#A9866B"/><circle cx="17" cy="-17" r="8" fill="#A9866B"/><circle cx="-7" cy="-3" r="3.5" fill="#33384D"/><circle cx="7" cy="-3" r="3.5" fill="#33384D"/><path d="M-9 6 q9 11 18 0" stroke="#5b4030" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+    <svg viewBox="0 0 400 200" role="img" aria-label="공용 잣대와 정밀 잣대">
+      <rect x="40" y="70" width="150" height="30" rx="5" fill="#d9b98a"/>
+      <g stroke="#a9885f" stroke-width="2"><line x1="60" y1="70" x2="60" y2="84"/><line x1="85" y1="70" x2="85" y2="84"/><line x1="110" y1="70" x2="110" y2="84"/><line x1="135" y1="70" x2="135" y2="84"/><line x1="160" y1="70" x2="160" y2="84"/></g>
+      <text x="115" y="125" font-size="15" text-anchor="middle" fill="#8a6a3f" font-family="Jua">공용 잣대 (표준법)</text>
+      <text x="115" y="148" font-size="13" text-anchor="middle" fill="#4e7a3c" font-family="Jua">✓ 누구나, 공개 장부로 OK</text>
+      <rect x="215" y="70" width="150" height="30" rx="5" fill="#F2D27A"/>
+      <g stroke="#cda83a" stroke-width="2"><line x1="235" y1="70" x2="235" y2="84"/><line x1="260" y1="70" x2="260" y2="84"/><line x1="285" y1="70" x2="285" y2="84"/><line x1="310" y1="70" x2="310" y2="84"/><line x1="335" y1="70" x2="335" y2="84"/></g>
+      <g transform="translate(355,62)"><rect x="-9" y="0" width="18" height="14" rx="2" fill="#5b6275"/><path d="M-5 0 v-5 a5 5 0 0 1 10 0 v5" fill="none" stroke="#5b6275" stroke-width="2.5"/></g>
+      <text x="290" y="125" font-size="15" text-anchor="middle" fill="#9a7320" font-family="Jua">정밀 잣대 (내부등급법)</text>
+      <text x="290" y="148" font-size="13" text-anchor="middle" fill="#a85a4a" font-family="Jua">🔒 은행 비밀 숫자 필요</text>
     </svg>
-    <p>그래서 곰돌이는 <span class="big">위험한 큰 대출</span>에만 마법을 썼어요.<br>마을은 오래오래 <span class="tealw">행복했답니다.</span> 🎉</p>
+    <p>사실 박사님에겐 잣대가 둘 있었어요.<br><span class="tealw">공용 잣대</span>는 누구나 공개된 장부로 잴 수 있지만,<br><span class="big">정밀 잣대</span>는 더 딱 맞는 대신<br>은행 속 비밀 숫자가 있어야만 쓸 수 있었지요.</p>
+    <p style="font-size:1.3rem">그래서 박사님은 <span class="tealw">공용 잣대</span>로 쟀답니다.</p>
+    <div class="hint">공용 잣대 = 표준법(SEC-SA, 공개자료로 가능) · 정밀 잣대 = 내부등급법(SEC-IRBA, 은행 내부 비밀자료 필요·더 정밀)</div>
+    <div class="pgno">11</div>
+  </section>
+
+  <!-- 12 conclusion -->
+  <section class="page">
+    <svg viewBox="0 0 400 170" role="img" aria-label="자신 있게 말하는 부엉이 박사">
+      <g transform="translate(150,90)">
+        <ellipse cx="0" cy="6" rx="46" ry="50" fill="#8a6d4f"/><ellipse cx="0" cy="12" rx="32" ry="38" fill="#c4a47e"/>
+        <circle cx="-17" cy="-4" r="18" fill="#fff"/><circle cx="17" cy="-4" r="18" fill="#fff"/>
+        <circle cx="-17" cy="-4" r="8" fill="#33384D"/><circle cx="17" cy="-4" r="8" fill="#33384D"/>
+        <path d="M-8 11 l8 12 l8 -12Z" fill="#F2B441"/>
+        <circle cx="-17" cy="-4" r="20" fill="none" stroke="#33384D" stroke-width="2"/><circle cx="17" cy="-4" r="20" fill="none" stroke="#33384D" stroke-width="2"/>
+      </g>
+      <g transform="translate(290,70)"><rect x="-60" y="-26" width="120" height="52" rx="14" fill="#FFF3D6" stroke="#F2B441" stroke-width="2"/><text x="0" y="-2" font-size="14" text-anchor="middle" fill="#9a7320" font-family="Jua">진짜예요!</text><text x="0" y="18" font-size="14" text-anchor="middle" fill="#9a7320" font-family="Jua">단, 잘 써야죠</text></g>
+    </svg>
+    <p>그래서 박사님은 자신 있게 말했답니다.<br>"SRT 마법은 <span class="big">진짜예요.</span><br>단, <span class="tealw">위험한 대출에 제대로</span> 써야 해요!"</p>
+    <div class="pgno">12</div>
+  </section>
+
+  <!-- 12 ending -->
+  <section class="page">
+    <svg viewBox="0 0 400 170" role="img" aria-label="행복한 마을">
+      <circle cx="200" cy="55" r="30" fill="#F2B441" opacity=".55"/>
+      <g fill="#E8775A"><path d="M50 120 l30 -34 l30 34Z"/><path d="M150 124 l32 -38 l32 38Z"/><path d="M260 120 l30 -34 l30 34Z"/></g>
+      <g fill="#F6D9B0"><rect x="58" y="120" width="44" height="34"/><rect x="160" y="124" width="48" height="30"/><rect x="268" y="120" width="44" height="34"/></g>
+      <g transform="translate(200,135)"><circle r="20" fill="#A9866B"/><circle cx="-14" cy="-14" r="7" fill="#A9866B"/><circle cx="14" cy="-14" r="7" fill="#A9866B"/><circle cx="-6" cy="-3" r="3" fill="#33384D"/><circle cx="6" cy="-3" r="3" fill="#33384D"/><path d="M-7 5 q7 9 14 0" stroke="#5b4030" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+    </svg>
+    <p>가벼워진 곰돌이들은<br>더 많은 가게에 돈을 빌려줬고,<br>마을은 오래오래 <span class="tealw">행복했답니다.</span> 🎉</p>
+    <a class="nextlink" href="https://sdkparkforbi.github.io/srt-study/">다음 편: 어른용 진짜 논문 보기 →</a>
     <div class="pgno">끝</div>
   </section>
 
   <div class="end">
     <div>
       <span class="pill">🐻 곰돌이 = 은행</span>
-      <span class="pill">👹 위험 도깨비 = 대출의 위험</span>
-      <span class="pill">💰 비상금 = 자본</span>
-      <span class="pill">⚔️ 기사님 = 투자자</span>
+      <span class="pill">🛡️ 갑옷 = 위험가중자산</span>
+      <span class="pill">👹 도깨비 = 대출의 위험</span>
+      <span class="pill">⚔️ 기사 = 투자자</span>
       <span class="pill">🦉 부엉이 박사 = 연구자</span>
+      <span class="pill">📗 금융감독원 장부 = FISIS</span>
     </div>
-    <p style="margin-top:16px">「곰돌이 은행과 위험 도깨비」 · 아주 쉬운 그림책<br>
-    SRT(중요위험이전) 이야기 · 2026 · 다음 편: 어른용 논문이 나와요 📄</p>
+    <p style="margin-top:16px">「곰돌이 은행과 위험 도깨비」 · 진짜 숫자 편<br>
+    숫자 출처: 은행 12곳 공시 + 금융감독원 FISIS · 2026</p>
   </div>
 
 </div>
